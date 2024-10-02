@@ -1,0 +1,3045 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/net/sett" ],
+    "title" : {
+      "en" : "The SeTT ontology"
+    },
+    "iri" : "http://purl.org/net/sett#",
+    "version" : "1.0",
+    "author" : [ "(3) Jerome Gensel", "(4) Gregory Giuliani", "(1) Daniela Fernanda Milon-Flores", "(2) Camille Bernard" ],
+    "description" : {
+      "en" : "SeTT is a multi-layer ontology specifically designed to describe the semantic trajectories of Territorial Units (TUs). It models three types of trajectories: raw, structured, and semantic. Together, these trajectories create a comprehensive framework for capturing, organizing, and analyzing the evolution of TUs across various thematic domains, thereby improving users' ability to interpret and understand complex data."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "(3) Jerome Gensel",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "(4) Gregory Giuliani",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "(1) Daniela Fernanda Milon-Flores",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "(2) Camille Bernard",
+        "type" : "label"
+      } ],
+      "citation" : [ {
+        "identifier" : "citation",
+        "language" : "en",
+        "value" : "Cite this vocabulary as Milon-Flores, D.; Bernard, C.; Gensel, J. and Giuliani, G. The SeTT ontology 1.0",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "en",
+        "value" : "October 2024",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "The negative impact of human activities on our planet has increased the interest of stakeholders-from policymakers to citizens-in monitoring and understanding local changes, including both environmental and socio-economic factors. However, these data are often complex and challenging for non-experts to interpret. We introduce the SeTT (Semantic Trajectory of a Territorial Unit) ontology to describe the semantic trajectories of Territorial Units (TUs), making this information accessible to both expert and non-expert users.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The SeTT ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/net/sett/RawTrajectory",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RawTrajectory"
+    },
+    "comment" : {
+      "undefined" : "A raw trajectory, or simply a trajectory, of Territorial Units (TUs) refers to a sequence of chronologically ordered measurements, tracking the temporal changes of domain-specific indicators.\nTo efficiently manage large volumes of data, the Indicator measurements are represented as Observations using the RDF Data Cube vocabulary, structured across three dimensions: Time, Space, and Indicator.\nPre-calculated Slices are then employed to store these Observations, each fixed over a defined period."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://purl.org/net/sett/Theme",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Theme"
+    },
+    "comment" : {
+      "undefined" : "A Theme characterizes the subject of a Thematic trajectory, providing a descriptive label for the whole trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/net/sett/CorinLandCoverPercentage",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorinLandCoverPercentage"
+    },
+    "comment" : {
+      "undefined" : "CorinLandCoverPercentage is a specific type of External Attribute that expresses the proportion of land covered by specific land cover types as a percentage of the total area."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/Indicator",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Indicator"
+    },
+    "comment" : {
+      "undefined" : "An Indicator is defined as a quantitative measure that captures the status of a situation or its variations over time. In the context of a Raw trajectory, it represents the data being monitored. \nThe concept of an Indicator is sufficiently abstract to encompass various domains, including environmental and socio-economic.\nIndicators correspond to the Indicator dimension of the RDF Data Cube and can exist as standalone measures or be composed of other indicators. \nIndicators can be further enriched with metadata such as bibliography citations, formula descriptions, and open-linked data resources."
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/net/sett/SlopeDirection",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SlopeDirection"
+    },
+    "comment" : {
+      "undefined" : "Slope Direction is a specific type of Intrinsic Attribute that describes the direction of the slope within a Trend, indicating whether it is increasing or decreasing."
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TransitionPoint",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransitionPoint"
+    },
+    "subClasses" : [ "27" ],
+    "comment" : {
+      "undefined" : "A Transition Point (TP) is a component of a Structure trajectory. \nEach TP is characterized by its position in the trajectory, as well as, intrinsic and external attributes that provide detailed information about its nature. \nUnlike Trends, TPs have an instantaneous duration, indicating that the change occurs at a precise moment. \nA TP marks the discontinuity between Trends."
+    },
+    "attributes" : [ "external" ],
+    "id" : "32",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/StructuredComponent",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StructuredComponent"
+    },
+    "subClasses" : [ "62", "32" ],
+    "comment" : {
+      "undefined" : "A Structured Component is a type of Component used to form a Structured trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/Slice",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Slice"
+    },
+    "comment" : {
+      "undefined" : "Pre-calculated Slices are components of the Raw trajectory which offers an efficient method for storing data, originally organized in EO data cubes across the dimensions of Space, Time, and Indicator. \nEach slice time period is defined by the detected Transition Points such as Breakpoints. \nImportantly, Slices are used to calculate the Trend component within the Structured trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/SlopeStrength",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SlopeStrength"
+    },
+    "comment" : {
+      "undefined" : "Slope Strength is a specific type of Intrinsic Attribute that measures the steepness of the slope in a Trend, reflecting the rate of change."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/Breakpoint",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Breakpoint"
+    },
+    "comment" : {
+      "undefined" : "A Breakpoint is a specific type of Transition Point (TP) defined as a moment in time when an abrupt change occurs in a time series. It is used to annotate a Break Event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "27",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/SemanticAnnotation",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemanticAnnotation"
+    },
+    "comment" : {
+      "undefined" : "Semantic annotations are used to enhance and provide additional context to Thematic components."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://purl.org/net/sett/Trend",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trend"
+    },
+    "comment" : {
+      "undefined" : "A Trend is a component of a Structured Trajectory, calculated from its corresponding Slice within a Raw Trajectory. \nEach Trend is characterized by its position in the trajectory, along with intrinsic and external attributes that provide detailed information about the trend's properties and behavior of the data. \nThe Trend period culminates when a Transition Point occurs, marking a discontinuity between Trends."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/StructuredTrajectory",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StructuredTrajectory"
+    },
+    "comment" : {
+      "undefined" : "A Structured trajectory results from organizing a Raw trajectory into a more structured format. It alternates between a chronologically ordered sequence of Trends and Transition Points, always concluding with a Trend. If no Transition Point is detected, the Structured Trajectory consists solely of a single Trend, indicating no transitional changes within the sequence."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/net/sett/IntrinsicAttributes",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntrinsicAttributes"
+    },
+    "subClasses" : [ "88", "23", "16", "2", "69", "10", "14", "4", "34", "1", "19", "17", "6" ],
+    "comment" : {
+      "undefined" : "Intrinsic attributes are a type of attribute derived from the component that enhances its description."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "64",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/net/sett/Event",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "subClasses" : [ "100" ],
+    "comment" : {
+      "undefined" : "An Event is a component of a Thematic Trajectory, derived from the semantic annotation of a Transition Point within a Structured Trajectory. \nEach Event is defined by its position in the trajectory and comprises semantic annotations and attributes that provide context and enhance the interpretation of the Thematic Trajectory's behavior. \nUnlike Episodes, Events have an instantaneous duration and signify the discontinuity between Episodes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "101",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/net/sett/Attribute",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attribute"
+    },
+    "subClasses" : [ "12", "35" ],
+    "comment" : {
+      "undefined" : "Trajectory components have Attributes that enhance their descriptions. \nThe value of an Attribute is flexible enough to represent various literal values regardless of the context."
+    },
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/net/sett/SeTT",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeTT"
+    },
+    "comment" : {
+      "undefined" : "The Semantic Trajectory of a Territorial Unit (SeTT) represents the collection of Thematic Trajectories associated with a Territorial Unit (TU). \nIt is sufficiently abstract to contain Thematic Trajectories regardless of their Thematic domain. \nA Territorial Unit (TU) can be composed of one ore multiple SeTTs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://purl.org/net/sett/ExternalAttributes",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExternalAttributes"
+    },
+    "subClasses" : [ "108", "11", "109", "81", "110", "111", "28" ],
+    "comment" : {
+      "undefined" : "External attributes are a type of attribute that is not derived from the component but contributes to its enrichment."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/BreakpointProbability",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BreakpointProbability"
+    },
+    "comment" : {
+      "undefined" : "BreakpointProbability is a specific type of External Attribute that indicates the likelihood of a Breakpoint occurring based on statistical analysis."
+    },
+    "attributes" : [ "external" ],
+    "id" : "108",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/Episode",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Episode"
+    },
+    "comment" : {
+      "undefined" : "An Episode is a component of the Thematic Trajectory, derived from the semantic annotation of its corresponding Trend within a Structured Trajectory. \nEach Episode is defined by its position in the trajectory sequence and characterized by semantic annotations that provide context for interpreting the trajectory's behavior.\n A set of attributes further enriches its contextual information. \nAn Episode period culminates when an Event occurs, marking a discontinuity between Episodes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "53",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendEndX",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendEndX"
+    },
+    "comment" : {
+      "undefined" : "TrendEndX is a specific type of Intrinsic Attribute that specifies the x-coordinate at the conclusion of a Trend."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendEndY",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendEndY"
+    },
+    "comment" : {
+      "undefined" : "Trend End Y is a specific type of Intrinsic Attribute that specifies the y-coordinate at the conclusion of a Trend."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/Component",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component"
+    },
+    "subClasses" : [ "76", "48", "74" ],
+    "comment" : {
+      "undefined" : "Trajectories consist of Components, each defined by its position in the sequence, the algorithm used for its calculation, and a set of Attributes that enrich its description.\nIn the SeTT ontology, there are three types of components: thematic, structured, and raw."
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://purl.org/net/sett/ThematicComponent",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThematicComponent"
+    },
+    "subClasses" : [ "53", "22" ],
+    "comment" : {
+      "undefined" : "A Thematic Component is a type of Component used to form a Thematic trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/BreakEvent",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BreakEvent"
+    },
+    "comment" : {
+      "undefined" : "A Break Event is a specific type of Event semantically annotated from a Breakpoint. \nBreak Events can be described by specialized attributes known as Explanatory Factors, which further explaint the occurrence of the breakpoint."
+    },
+    "attributes" : [ "external" ],
+    "id" : "100",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/EventDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventDate"
+    },
+    "comment" : {
+      "undefined" : "Event Date is a specific type of Intrinsic Attribute that specifies the date when an Event occurred."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendPValue",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendPValue"
+    },
+    "comment" : {
+      "undefined" : "A p-value is a specific type of External Attribute that indicates the statistical significance of a Trend line."
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/EpisodeStartDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EpisodeStartDate"
+    },
+    "comment" : {
+      "undefined" : "Episode Start Date is a specific type of Intrinsic Attribute that marks the date when an Episode begins."
+    },
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/RawComponent",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RawComponent"
+    },
+    "subClasses" : [ "73" ],
+    "comment" : {
+      "undefined" : "A Raw Component is a type of Component used to form a Raw trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/ExplanatoryFactor",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExplanatoryFactor"
+    },
+    "comment" : {
+      "undefined" : "Explanatory Factors are a specific type of External Attribute that provides additional context regarding the occurrence of a Breakpoint. \nVarious resources, such as available URLs or bibliographic citations, can be used to enrich the derived Break Event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "109",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendGradualMagnitude",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendGradualMagnitude"
+    },
+    "comment" : {
+      "undefined" : "A Gradual Magnitude is a specific type of External Attribute that describes the magnitude of change within a Trend. It is calculated by multiplying the Slope value by the Trend duration."
+    },
+    "attributes" : [ "external" ],
+    "id" : "111",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/EpisodeEndDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EpisodeEndDate"
+    },
+    "comment" : {
+      "undefined" : "Episode End Date is a specific type of Intrinsic Attribute that indicates the date when an Episode concludes."
+    },
+    "attributes" : [ "external" ],
+    "id" : "69",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/BreakpointMagnitude",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BreakpointMagnitude"
+    },
+    "comment" : {
+      "undefined" : "A Breakpoint Magnitude is a specific type of External Attribute that quantifies the change at a Breakpoint. It is calculated as the distance between the Breakpoint and its subsequent point in time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/SlopeValue",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SlopeValue"
+    },
+    "comment" : {
+      "undefined" : "Slop eValue is a specific type of Intrinsic Attribute that represents the numerical value of the slope."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendStartX",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendStartX"
+    },
+    "comment" : {
+      "undefined" : "Trend Start X is a specific type of Intrinsic Attribute that indicates the x-coordinate at the beginning of a Trend."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendStartY",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendStartY"
+    },
+    "comment" : {
+      "undefined" : "Trend Start Y is a specific type of Intrinsic Attribute that indicates the y-coordinate at the beginning of a Trend."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/ThematicTrajectory",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThematicTrajectory"
+    },
+    "comment" : {
+      "undefined" : "A Thematic Trajectory is a semantically enriched representation of a Territorial Unit's (TU) trajectory, associated with a specific theme. It is derived from the annotation of a Structured Trajectory and alternates between a chronologically ordered sequence of Episodes and Events, always concluding with an Episode. \nA Thematic Trajectory consists solely of a single Episode if no Event is present."
+    },
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://purl.org/net/sett/CorinLandCoverHectares",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CorinLandCoverHectares"
+    },
+    "comment" : {
+      "undefined" : "CorinLandCoverHectares is a specific type of External Attribute that measures the area, in hectares, covered by different land cover types within a defined region."
+    },
+    "attributes" : [ "external" ],
+    "id" : "110",
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TerritorialUnit",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TerritorialUnit"
+    },
+    "comment" : {
+      "undefined" : "A Territorial Unit (TU) denotes a geographic area at the lowest level of administrative division (e.g., municipalities, sub-districts, townships). \nTUs are spatially fixed entities, although they may evolve over time due to environmental shifts (e.g., land use changes, climate effects) or socioeconomic factors (e.g., population dynamics). \nTo approach cases where TU boundaries are not permanently fixed, we exploit the Territorial Statistical Nomenclature (TSN) ontology, specifically the tsn:UnitVersion class, which describes a unique representation of a Territorial Unit that remains stable for a defined period. \nTUs are composed of one or more SeTT."
+    },
+    "attributes" : [ "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://purl.org/net/sett/TrendDuration",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrendDuration"
+    },
+    "comment" : {
+      "undefined" : "Trend Duration is a specific type of Intrinsic Attribute that indicates the length of time over which a Trend is observed."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TransitionPointY",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransitionPointY"
+    },
+    "comment" : {
+      "undefined" : "Transition Point Y is a specific type of Intrinsic Attribute that denotes the y-coordinate of a Transition Point within the trajectory"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://purl.org/net/sett/TransitionPointX",
+    "baseIri" : "http://purl.org/net/sett",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransitionPointX"
+    },
+    "comment" : {
+      "undefined" : "Transition Point X is a specific type of Intrinsic Attribute that denotes the x-coordinate of a Transition Point within the trajectory."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "35" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "3",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "13",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "15",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "18",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "103",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "104",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "105",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "71",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "115",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "116",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "117",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "145",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "156",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "235",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "236",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "237",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "246",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "260",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "10",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "14",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasEventDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasEventDate"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasBreakpointMagnitude",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasBreakpointMagnitude"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "27",
+    "attributes" : [ "object", "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://purl.org/net/sett#hasTransitionPoint",
+    "inverse" : "33",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "hasTransitionPoint"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "range" : "17",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "19",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "16",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "17",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "19",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/net/sett/calculatedWith",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "calculatedWith"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "41"
+  }, {
+    "range" : "2",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "4",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "6",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "10",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "14",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "16",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasEpisode",
+    "inverse" : "54",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasEpisode"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/net/sett/semanticAnnotationBasedOn",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "semanticAnnotationBasedOn"
+    },
+    "domain" : "56",
+    "attributes" : [ "object", "external" ],
+    "id" : "55"
+  }, {
+    "range" : "10",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "6",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "14",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "1",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasAttribute",
+    "inverse" : "65",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasAttribute"
+    },
+    "domain" : "64",
+    "subproperty" : [ "24", "29" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTransitionPointX",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "hasTransitionPointX"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTransitionPointY",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasTransitionPointY"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "32",
+    "attributes" : [ "object", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasEpisodeEndDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "hasEpisodeEndDate"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "53",
+    "attributes" : [ "object", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/net/sett/isAttributeOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isAttributeOf"
+    },
+    "domain" : "64",
+    "subproperty" : [ "70", "71" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSlopeDirection",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasSlopeDirection"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSemanticAnnotation",
+    "inverse" : "77",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasSemanticAnnotation"
+    },
+    "domain" : "76",
+    "attributes" : [ "object", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.org/net/sett/IsEventOf",
+    "inverse" : "79",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "IsEventOf"
+    },
+    "domain" : "22",
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendPValue",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasTrendPValue"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSlopeValue",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasSlopeValue"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendStartX",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasTrendStartX"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "83"
+  }, {
+    "range" : "32",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "48",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "48",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "35",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSlice",
+    "inverse" : "90",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasSlice"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasIntrinsicAttribute",
+    "inverse" : "70",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasIntrinsicAttribute"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "64",
+    "subproperty" : [ "21", "91", "92", "82", "83", "66", "93", "68", "67", "94", "95", "72", "96" ],
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasEpisodeStartDate",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasEpisodeStartDate"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "53",
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "range" : "48",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "76",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "76",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://purl.org/net/sett/isSliceOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isSliceOf"
+    },
+    "domain" : "73",
+    "attributes" : [ "allValues", "object", "external" ],
+    "id" : "105"
+  }, {
+    "range" : "62",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/net/sett/isExternalAttributeOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isExternalAttributeOf"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTheme",
+    "inverse" : "113",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasTheme"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasEvent",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasEvent"
+    },
+    "domain" : "52",
+    "attributes" : [ "object", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://purl.org/net/sett#isTransitionPointOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isTransitionPointOf"
+    },
+    "domain" : "32",
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "range" : "10",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "14",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "14",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "14",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "14",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "10",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "14",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasExternalAttribute",
+    "inverse" : "71",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasExternalAttribute"
+    },
+    "superproperty" : [ "63" ],
+    "domain" : "64",
+    "subproperty" : [ "80", "125", "26", "126", "127", "128", "129" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "4",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "6",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "10",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "19",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "2",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "range" : "4",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "6",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "10",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "14",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSlopeStrength",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSlopeStrength"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/net/sett/isThematicTrajectoryOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isThematicTrajectoryOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://purl.org/net/sett#hasTrend",
+    "inverse" : "143",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "hasTrend"
+    },
+    "domain" : "31",
+    "attributes" : [ "object" ],
+    "id" : "142"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "6",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "10",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "56",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasCorinLandCoverHectares",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "hasCorinLandCoverHectares"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "53",
+    "attributes" : [ "object", "external" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendStarY",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasTrendStarY"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/net/sett/eventIsAnnotatedFrom",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "eventIsAnnotatedFrom"
+    },
+    "domain" : "22",
+    "subproperty" : [ "149" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "148"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "52",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "56",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "107",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "155",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "31",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "155",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "31",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "8",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "52",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendGradualMagnitude",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "hasTrendGradualMagnitude"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "125"
+  }, {
+    "range" : "107",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "7",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "56",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "12",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendDuration",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasTrendDuration"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "range" : "155",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "12",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "31",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "42",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "8",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "42",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "52",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "42",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "7",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "76",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "76",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "56",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasAttributeValue",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "hasAttributeValue"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "178"
+  }, {
+    "range" : "107",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "81",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "12",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "12",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "11",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "110",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://purl.org/net/sett/episodeIsAnnotatedFrom",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "episodeIsAnnotatedFrom"
+    },
+    "domain" : "53",
+    "attributes" : [ "object", "external" ],
+    "id" : "185"
+  }, {
+    "range" : "11",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "35",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "110",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "35",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "range" : "111",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "22",
+    "domain" : "100",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "109",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "57",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "8",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "57",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "52",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "12",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "108",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "12",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "8",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "12",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "35",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "8",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "35",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "52",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "iri" : "http://purl.org/net/sett#isComposedOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isComposedOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendEndY",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasTrendEndY"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/net/sett/isIntrinsicAttributeOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isIntrinsicAttributeOf"
+    },
+    "superproperty" : [ "65" ],
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasTrendEndX",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasTrendEndX"
+    },
+    "superproperty" : [ "24" ],
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "94"
+  }, {
+    "range" : "155",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "155",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "31",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "35",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSequenceOrder",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasSequenceOrder"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "212"
+  }, {
+    "range" : "8",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "35",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "52",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "35",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "155",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "35",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "31",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "35",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "8",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "35",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "52",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "35",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "17",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "16",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "2",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "19",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "1",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "iri" : "http://purl.org/net/sett/breakEventIsAnnotatedFrom",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "breakEventIsAnnotatedFrom"
+    },
+    "superproperty" : [ "148" ],
+    "domain" : "100",
+    "attributes" : [ "object", "external" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://purl.org/net/sett/delimit",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "delimit"
+    },
+    "domain" : "32",
+    "subproperty" : [ "231" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "230"
+  }, {
+    "range" : "34",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "23",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "range" : "81",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "234"
+  }, {
+    "range" : "81",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasBreakpointProbability",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "hasBreakpointProbability"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "27",
+    "attributes" : [ "object", "external" ],
+    "id" : "129"
+  }, {
+    "range" : "88",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "22",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
+  }, {
+    "range" : "111",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "238"
+  }, {
+    "range" : "109",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "111",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "81",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasThematicTrajectory",
+    "inverse" : "141",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasThematicTrajectory"
+    },
+    "domain" : "107",
+    "attributes" : [ "object", "external" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasSeTT",
+    "inverse" : "244",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "hasSeTT"
+    },
+    "domain" : "155",
+    "attributes" : [ "object", "external" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://purl.org/net/sett/trendIsCalculadedFrom",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "trendIsCalculadedFrom"
+    },
+    "domain" : "62",
+    "attributes" : [ "object", "external" ],
+    "id" : "245"
+  }, {
+    "iri" : "http://purl.org/net/sett/isSeTTOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isSeTTOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasCorinLandCoverPercentage",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasCorinLandCoverPercentage"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "53",
+    "attributes" : [ "object", "external" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://purl.org/net/sett#breakpointDelimit",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "breakpointDelimit"
+    },
+    "superproperty" : [ "230" ],
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasThemeLabel",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "hasThemeLabel"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "246"
+  }, {
+    "range" : "111",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "109",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "81",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "111",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "109",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "11",
+    "domain" : "110",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "81",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "19",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "17",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "4",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "2",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
+  }, {
+    "range" : "34",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
+  }, {
+    "range" : "16",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "259"
+  }, {
+    "range" : "1",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "260"
+  }, {
+    "range" : "7",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "range" : "107",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "262"
+  }, {
+    "range" : "56",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "263"
+  }, {
+    "range" : "31",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
+  }, {
+    "range" : "155",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
+  }, {
+    "range" : "52",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "8",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
+  }, {
+    "range" : "25",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "iri" : "http://purl.org/net/sett/monitorsIndicator",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "monitorsIndicator"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "269"
+  }, {
+    "range" : "42",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "range" : "25",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
+  }, {
+    "range" : "6",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
+  }, {
+    "range" : "4",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
+  }, {
+    "range" : "14",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "10",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
+  }, {
+    "range" : "17",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "16",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  }, {
+    "range" : "2",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
+  }, {
+    "range" : "19",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
+  }, {
+    "iri" : "http://purl.org/net/sett/isThemeOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isThemeOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "113"
+  }, {
+    "range" : "1",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "34",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
+  }, {
+    "iri" : "http://purl.org/net/sett/hasExplanatoryFactor",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "hasExplanatoryFactor"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "100",
+    "attributes" : [ "object", "external" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/net/sett#isTrendOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "isTrendOf"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "143"
+  }, {
+    "range" : "23",
+    "domain" : "88",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://purl.org/net/sett/isSemanticAnnotationOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isSemanticAnnotationOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "range" : "6",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "iri" : "http://purl.org/net/sett/isEpisodeOf",
+    "baseIri" : "http://purl.org/net/sett",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "isEpisodeOf"
+    },
+    "domain" : "64",
+    "attributes" : [ "object", "external" ],
+    "id" : "54"
+  }, {
+    "range" : "4",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "14",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "10",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
+  } ]
+}

@@ -1,0 +1,764 @@
+<http://purl.org/net/sett#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/net/sett#> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/net/sett/1.0> .
+<http://purl.org/net/sett#> <http://purl.org/dc/elements/1.1/abstract> "The negative impact of human activities on our planet has increased the interest of stakeholders-from policymakers to citizens-in monitoring and understanding local changes, including both environmental and socio-economic factors. However, these data are often complex and challenging for non-experts to interpret. We introduce the SeTT (Semantic Trajectory of a Territorial Unit) ontology to describe the semantic trajectories of Territorial Units (TUs), making this information accessible to both expert and non-expert users."@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/elements/1.1/description> "SeTT is a multi-layer ontology specifically designed to describe the semantic trajectories of Territorial Units (TUs). It models three types of trajectories: raw, structured, and semantic. Together, these trajectories create a comprehensive framework for capturing, organizing, and analyzing the evolution of TUs across various thematic domains, thereby improving users' ability to interpret and understand complex data."@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/elements/1.1/title> "The SeTT ontology"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/created> "October 2024"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/creator> "(1) Daniela Fernanda Milon-Flores"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/creator> "(2) Camille Bernard"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/creator> "(3) Jerome Gensel"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/creator> "(4) Gregory Giuliani"@en .
+<http://purl.org/net/sett#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://purl.org/net/sett#> <http://schema.org/citation> "Cite this vocabulary as Milon-Flores, D.; Bernard, C.; Gensel, J. and Giuliani, G. The SeTT ontology 1.0"@en .
+<http://purl.org/net/sett#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/citation
+<http://schema.org/citation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/sett#breakpointDelimit
+<http://purl.org/net/sett#breakpointDelimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett#breakpointDelimit> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/delimit> .
+<http://purl.org/net/sett#breakpointDelimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Breakpoint> .
+# 
+# http://purl.org/net/sett#hasTransitionPoint
+<http://purl.org/net/sett#hasTransitionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett#hasTransitionPoint> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett#isTransitionPointOf> .
+<http://purl.org/net/sett#hasTransitionPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/StructuredTrajectory> .
+<http://purl.org/net/sett#hasTransitionPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TransitionPoint> .
+# 
+# http://purl.org/net/sett#hasTrend
+<http://purl.org/net/sett#hasTrend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett#hasTrend> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett#isTrendOf> .
+<http://purl.org/net/sett#hasTrend> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/StructuredTrajectory> .
+<http://purl.org/net/sett#hasTrend> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Trend> .
+# 
+# http://purl.org/net/sett#isComposedOf
+<http://purl.org/net/sett#isComposedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett#isTransitionPointOf
+<http://purl.org/net/sett#isTransitionPointOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett#isTransitionPointOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/TransitionPoint> .
+<http://purl.org/net/sett#isTransitionPointOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/StructuredTrajectory> .
+# 
+# http://purl.org/net/sett#isTrendOf
+<http://purl.org/net/sett#isTrendOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett#isTrendOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett#isTrendOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/StructuredTrajectory> .
+# 
+# http://purl.org/net/sett/IsEventOf
+<http://purl.org/net/sett/IsEventOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/IsEventOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/hasEvent> .
+# 
+# http://purl.org/net/sett/breakEventIsAnnotatedFrom
+<http://purl.org/net/sett/breakEventIsAnnotatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/breakEventIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/eventIsAnnotatedFrom> .
+<http://purl.org/net/sett/breakEventIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/BreakEvent> .
+<http://purl.org/net/sett/breakEventIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Breakpoint> .
+# 
+# http://purl.org/net/sett/delimit
+<http://purl.org/net/sett/delimit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/delimit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/TransitionPoint> .
+<http://purl.org/net/sett/delimit> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Slice> .
+# 
+# http://purl.org/net/sett/episodeIsAnnotatedFrom
+<http://purl.org/net/sett/episodeIsAnnotatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/episodeIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Episode> .
+<http://purl.org/net/sett/episodeIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Trend> .
+# 
+# http://purl.org/net/sett/eventIsAnnotatedFrom
+<http://purl.org/net/sett/eventIsAnnotatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/eventIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Event> .
+<http://purl.org/net/sett/eventIsAnnotatedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TransitionPoint> .
+# 
+# http://purl.org/net/sett/hasAttribute
+<http://purl.org/net/sett/hasAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isAttributeOf> .
+# 
+# http://purl.org/net/sett/hasBreakpointMagnitude
+<http://purl.org/net/sett/hasBreakpointMagnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasBreakpointMagnitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasBreakpointMagnitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Breakpoint> .
+<http://purl.org/net/sett/hasBreakpointMagnitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/BreakpointMagnitude> .
+# 
+# http://purl.org/net/sett/hasBreakpointProbability
+<http://purl.org/net/sett/hasBreakpointProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasBreakpointProbability> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasBreakpointProbability> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Breakpoint> .
+<http://purl.org/net/sett/hasBreakpointProbability> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/BreakpointProbability> .
+# 
+# http://purl.org/net/sett/hasCorinLandCoverHectares
+<http://purl.org/net/sett/hasCorinLandCoverHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasCorinLandCoverHectares> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasCorinLandCoverHectares> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Episode> .
+<http://purl.org/net/sett/hasCorinLandCoverHectares> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/CorinLandCoverHectares> .
+# 
+# http://purl.org/net/sett/hasCorinLandCoverPercentage
+<http://purl.org/net/sett/hasCorinLandCoverPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasCorinLandCoverPercentage> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasCorinLandCoverPercentage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Episode> .
+<http://purl.org/net/sett/hasCorinLandCoverPercentage> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/CorinLandCoverPercentage> .
+# 
+# http://purl.org/net/sett/hasEpisode
+<http://purl.org/net/sett/hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isEpisodeOf> .
+<http://purl.org/net/sett/hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/ThematicTrajectory> .
+<http://purl.org/net/sett/hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Episode> .
+# 
+# http://purl.org/net/sett/hasEpisodeEndDate
+<http://purl.org/net/sett/hasEpisodeEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasEpisodeEndDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasEpisodeEndDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Episode> .
+<http://purl.org/net/sett/hasEpisodeEndDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/EpisodeEndDate> .
+# 
+# http://purl.org/net/sett/hasEpisodeStartDate
+<http://purl.org/net/sett/hasEpisodeStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasEpisodeStartDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasEpisodeStartDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Episode> .
+<http://purl.org/net/sett/hasEpisodeStartDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/EpisodeStartDate> .
+# 
+# http://purl.org/net/sett/hasEvent
+<http://purl.org/net/sett/hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/ThematicTrajectory> .
+<http://purl.org/net/sett/hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Event> .
+# 
+# http://purl.org/net/sett/hasEventDate
+<http://purl.org/net/sett/hasEventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasEventDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasEventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Event> .
+<http://purl.org/net/sett/hasEventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/EventDate> .
+# 
+# http://purl.org/net/sett/hasExplanatoryFactor
+<http://purl.org/net/sett/hasExplanatoryFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasExplanatoryFactor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasExplanatoryFactor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/BreakEvent> .
+<http://purl.org/net/sett/hasExplanatoryFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/ExplanatoryFactor> .
+# 
+# http://purl.org/net/sett/hasExternalAttribute
+<http://purl.org/net/sett/hasExternalAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasExternalAttribute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasAttribute> .
+<http://purl.org/net/sett/hasExternalAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isExternalAttributeOf> .
+# 
+# http://purl.org/net/sett/hasIntrinsicAttribute
+<http://purl.org/net/sett/hasIntrinsicAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasIntrinsicAttribute> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasAttribute> .
+<http://purl.org/net/sett/hasIntrinsicAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isIntrinsicAttributeOf> .
+<http://purl.org/net/sett/hasIntrinsicAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://purl.org/net/sett/hasSeTT
+<http://purl.org/net/sett/hasSeTT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSeTT> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isSeTTOf> .
+<http://purl.org/net/sett/hasSeTT> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/TerritorialUnit> .
+<http://purl.org/net/sett/hasSeTT> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/SeTT> .
+# 
+# http://purl.org/net/sett/hasSemanticAnnotation
+<http://purl.org/net/sett/hasSemanticAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSemanticAnnotation> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isSemanticAnnotationOf> .
+<http://purl.org/net/sett/hasSemanticAnnotation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/ThematicComponent> .
+<http://purl.org/net/sett/hasSemanticAnnotation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/SemanticAnnotation> .
+# 
+# http://purl.org/net/sett/hasSlice
+<http://purl.org/net/sett/hasSlice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSlice> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isSliceOf> .
+<http://purl.org/net/sett/hasSlice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/RawTrajectory> .
+<http://purl.org/net/sett/hasSlice> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Slice> .
+# 
+# http://purl.org/net/sett/hasSlopeDirection
+<http://purl.org/net/sett/hasSlopeDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSlopeDirection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasSlopeDirection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasSlopeDirection> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/SlopeDirection> .
+# 
+# http://purl.org/net/sett/hasSlopeStrength
+<http://purl.org/net/sett/hasSlopeStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSlopeStrength> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasSlopeStrength> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasSlopeStrength> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/SlopeStrength> .
+# 
+# http://purl.org/net/sett/hasSlopeValue
+<http://purl.org/net/sett/hasSlopeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasSlopeValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasSlopeValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasSlopeValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/SlopeValue> .
+# 
+# http://purl.org/net/sett/hasThematicTrajectory
+<http://purl.org/net/sett/hasThematicTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasThematicTrajectory> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isThematicTrajectoryOf> .
+<http://purl.org/net/sett/hasThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/SeTT> .
+<http://purl.org/net/sett/hasThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/ThematicTrajectory> .
+# 
+# http://purl.org/net/sett/hasTheme
+<http://purl.org/net/sett/hasTheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTheme> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/net/sett/isThemeOf> .
+<http://purl.org/net/sett/hasTheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/ThematicTrajectory> .
+<http://purl.org/net/sett/hasTheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Theme> .
+# 
+# http://purl.org/net/sett/hasTransitionPointX
+<http://purl.org/net/sett/hasTransitionPointX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTransitionPointX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTransitionPointX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/TransitionPoint> .
+<http://purl.org/net/sett/hasTransitionPointX> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TransitionPointX> .
+# 
+# http://purl.org/net/sett/hasTransitionPointY
+<http://purl.org/net/sett/hasTransitionPointY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTransitionPointY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTransitionPointY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/TransitionPoint> .
+<http://purl.org/net/sett/hasTransitionPointY> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TransitionPointY> .
+# 
+# http://purl.org/net/sett/hasTrendDuration
+<http://purl.org/net/sett/hasTrendDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendDuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTrendDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendDuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendDuration> .
+# 
+# http://purl.org/net/sett/hasTrendEndX
+<http://purl.org/net/sett/hasTrendEndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendEndX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTrendEndX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendEndX> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendEndX> .
+# 
+# http://purl.org/net/sett/hasTrendEndY
+<http://purl.org/net/sett/hasTrendEndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendEndY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTrendEndY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendEndY> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendEndY> .
+# 
+# http://purl.org/net/sett/hasTrendGradualMagnitude
+<http://purl.org/net/sett/hasTrendGradualMagnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendGradualMagnitude> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasTrendGradualMagnitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendGradualMagnitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendGradualMagnitude> .
+# 
+# http://purl.org/net/sett/hasTrendPValue
+<http://purl.org/net/sett/hasTrendPValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendPValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasExternalAttribute> .
+<http://purl.org/net/sett/hasTrendPValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendPValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendPValue> .
+# 
+# http://purl.org/net/sett/hasTrendStarY
+<http://purl.org/net/sett/hasTrendStarY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendStarY> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTrendStarY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendStarY> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendStartY> .
+# 
+# http://purl.org/net/sett/hasTrendStartX
+<http://purl.org/net/sett/hasTrendStartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/hasTrendStartX> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/hasIntrinsicAttribute> .
+<http://purl.org/net/sett/hasTrendStartX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/hasTrendStartX> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/TrendStartX> .
+# 
+# http://purl.org/net/sett/isAttributeOf
+<http://purl.org/net/sett/isAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isEpisodeOf
+<http://purl.org/net/sett/isEpisodeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isExternalAttributeOf
+<http://purl.org/net/sett/isExternalAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/isExternalAttributeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/isAttributeOf> .
+# 
+# http://purl.org/net/sett/isIntrinsicAttributeOf
+<http://purl.org/net/sett/isIntrinsicAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/isIntrinsicAttributeOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/net/sett/isAttributeOf> .
+# 
+# http://purl.org/net/sett/isSeTTOf
+<http://purl.org/net/sett/isSeTTOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isSemanticAnnotationOf
+<http://purl.org/net/sett/isSemanticAnnotationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isSliceOf
+<http://purl.org/net/sett/isSliceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isThematicTrajectoryOf
+<http://purl.org/net/sett/isThematicTrajectoryOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/isThemeOf
+<http://purl.org/net/sett/isThemeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/net/sett/monitorsIndicator
+<http://purl.org/net/sett/monitorsIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/monitorsIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/net/sett/monitorsIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/RawTrajectory> .
+<http://purl.org/net/sett/monitorsIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Indicator> .
+# 
+# http://purl.org/net/sett/semanticAnnotationBasedOn
+<http://purl.org/net/sett/semanticAnnotationBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/semanticAnnotationBasedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/SemanticAnnotation> .
+<http://purl.org/net/sett/semanticAnnotationBasedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Attribute> .
+# 
+# http://purl.org/net/sett/trendIsCalculadedFrom
+<http://purl.org/net/sett/trendIsCalculadedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/net/sett/trendIsCalculadedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/trendIsCalculadedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/net/sett/Slice> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/sett/calculatedWith
+<http://purl.org/net/sett/calculatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/net/sett/calculatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Component> .
+<http://purl.org/net/sett/calculatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/net/sett/hasAttributeValue
+<http://purl.org/net/sett/hasAttributeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/net/sett/hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Attribute> .
+<http://purl.org/net/sett/hasAttributeValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://purl.org/net/sett/hasSequenceOrder
+<http://purl.org/net/sett/hasSequenceOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/net/sett/hasSequenceOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/net/sett/hasSequenceOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Component> .
+<http://purl.org/net/sett/hasSequenceOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://purl.org/net/sett/hasThemeLabel
+<http://purl.org/net/sett/hasThemeLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/net/sett/hasThemeLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/net/sett/Theme> .
+<http://purl.org/net/sett/hasThemeLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/net/sett/Attribute
+<http://purl.org/net/sett/Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Trajectory components have Attributes that enhance their descriptions. \nThe value of an Attribute is flexible enough to represent various literal values regardless of the context." .
+# 
+# http://purl.org/net/sett/BreakEvent
+<http://purl.org/net/sett/BreakEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/BreakEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Event> .
+<http://purl.org/net/sett/BreakEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "A Break Event is a specific type of Event semantically annotated from a Breakpoint. \nBreak Events can be described by specialized attributes known as Explanatory Factors, which further explaint the occurrence of the breakpoint." .
+# 
+# http://purl.org/net/sett/Breakpoint
+<http://purl.org/net/sett/Breakpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Breakpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/TransitionPoint> .
+<http://purl.org/net/sett/Breakpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A Breakpoint is a specific type of Transition Point (TP) defined as a moment in time when an abrupt change occurs in a time series. It is used to annotate a Break Event." .
+# 
+# http://purl.org/net/sett/BreakpointMagnitude
+<http://purl.org/net/sett/BreakpointMagnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/BreakpointMagnitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/BreakpointMagnitude> <http://www.w3.org/2000/01/rdf-schema#comment> "A Breakpoint Magnitude is a specific type of External Attribute that quantifies the change at a Breakpoint. It is calculated as the distance between the Breakpoint and its subsequent point in time." .
+# 
+# http://purl.org/net/sett/BreakpointProbability
+<http://purl.org/net/sett/BreakpointProbability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/BreakpointProbability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/BreakpointProbability> <http://www.w3.org/2000/01/rdf-schema#comment> "BreakpointProbability is a specific type of External Attribute that indicates the likelihood of a Breakpoint occurring based on statistical analysis." .
+# 
+# http://purl.org/net/sett/Component
+<http://purl.org/net/sett/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Component> <http://www.w3.org/2000/01/rdf-schema#comment> "Trajectories consist of Components, each defined by its position in the sequence, the algorithm used for its calculation, and a set of Attributes that enrich its description.\nIn the SeTT ontology, there are three types of components: thematic, structured, and raw." .
+# 
+# http://purl.org/net/sett/CorinLandCoverHectares
+<http://purl.org/net/sett/CorinLandCoverHectares> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/CorinLandCoverHectares> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/CorinLandCoverHectares> <http://www.w3.org/2000/01/rdf-schema#comment> "CorinLandCoverHectares is a specific type of External Attribute that measures the area, in hectares, covered by different land cover types within a defined region." .
+# 
+# http://purl.org/net/sett/CorinLandCoverPercentage
+<http://purl.org/net/sett/CorinLandCoverPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/CorinLandCoverPercentage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/CorinLandCoverPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "CorinLandCoverPercentage is a specific type of External Attribute that expresses the proportion of land covered by specific land cover types as a percentage of the total area." .
+# 
+# http://purl.org/net/sett/Episode
+<http://purl.org/net/sett/Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ThematicComponent> .
+<http://purl.org/net/sett/Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/ThematicTrajectory> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/isEpisodeOf> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/Episode> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/sett/Event> .
+<http://purl.org/net/sett/Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "An Episode is a component of the Thematic Trajectory, derived from the semantic annotation of its corresponding Trend within a Structured Trajectory. \nEach Episode is defined by its position in the trajectory sequence and characterized by semantic annotations that provide context for interpreting the trajectory's behavior.\n A set of attributes further enriches its contextual information. \nAn Episode period culminates when an Event occurs, marking a discontinuity between Episodes." .
+# 
+# http://purl.org/net/sett/EpisodeEndDate
+<http://purl.org/net/sett/EpisodeEndDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/EpisodeEndDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/EpisodeEndDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode End Date is a specific type of Intrinsic Attribute that indicates the date when an Episode concludes." .
+# 
+# http://purl.org/net/sett/EpisodeStartDate
+<http://purl.org/net/sett/EpisodeStartDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/EpisodeStartDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/EpisodeStartDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode Start Date is a specific type of Intrinsic Attribute that marks the date when an Episode begins." .
+# 
+# http://purl.org/net/sett/Event
+<http://purl.org/net/sett/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ThematicComponent> .
+<http://purl.org/net/sett/Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/ThematicTrajectory> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/IsEventOf> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An Event is a component of a Thematic Trajectory, derived from the semantic annotation of a Transition Point within a Structured Trajectory. \nEach Event is defined by its position in the trajectory and comprises semantic annotations and attributes that provide context and enhance the interpretation of the Thematic Trajectory's behavior. \nUnlike Episodes, Events have an instantaneous duration and signify the discontinuity between Episodes." .
+# 
+# http://purl.org/net/sett/EventDate
+<http://purl.org/net/sett/EventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/EventDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/EventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Event Date is a specific type of Intrinsic Attribute that specifies the date when an Event occurred." .
+# 
+# http://purl.org/net/sett/ExplanatoryFactor
+<http://purl.org/net/sett/ExplanatoryFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/ExplanatoryFactor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/ExplanatoryFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Explanatory Factors are a specific type of External Attribute that provides additional context regarding the occurrence of a Breakpoint. \nVarious resources, such as available URLs or bibliographic citations, can be used to enrich the derived Break Event." .
+# 
+# http://purl.org/net/sett/ExternalAttributes
+<http://purl.org/net/sett/ExternalAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/ExternalAttributes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Attribute> .
+<http://purl.org/net/sett/ExternalAttributes> <http://www.w3.org/2000/01/rdf-schema#comment> "External attributes are a type of attribute that is not derived from the component but contributes to its enrichment." .
+# 
+# http://purl.org/net/sett/Indicator
+<http://purl.org/net/sett/Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/Indicator> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett#isComposedOf> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/Indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "An Indicator is defined as a quantitative measure that captures the status of a situation or its variations over time. In the context of a Raw trajectory, it represents the data being monitored. \nThe concept of an Indicator is sufficiently abstract to encompass various domains, including environmental and socio-economic.\nIndicators correspond to the Indicator dimension of the RDF Data Cube and can exist as standalone measures or be composed of other indicators. \nIndicators can be further enriched with metadata such as bibliography citations, formula descriptions, and open-linked data resources." .
+# 
+# http://purl.org/net/sett/IntrinsicAttributes
+<http://purl.org/net/sett/IntrinsicAttributes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/IntrinsicAttributes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Attribute> .
+<http://purl.org/net/sett/IntrinsicAttributes> <http://www.w3.org/2000/01/rdf-schema#comment> "Intrinsic attributes are a type of attribute derived from the component that enhances its description." .
+# 
+# http://purl.org/net/sett/RawComponent
+<http://purl.org/net/sett/RawComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/RawComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Component> .
+<http://purl.org/net/sett/RawComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A Raw Component is a type of Component used to form a Raw trajectory." .
+# 
+# http://purl.org/net/sett/RawTrajectory
+<http://purl.org/net/sett/RawTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/RawTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/Slice> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/hasSlice> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/RawTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A raw trajectory, or simply a trajectory, of Territorial Units (TUs) refers to a sequence of chronologically ordered measurements, tracking the temporal changes of domain-specific indicators.\nTo efficiently manage large volumes of data, the Indicator measurements are represented as Observations using the RDF Data Cube vocabulary, structured across three dimensions: Time, Space, and Indicator.\nPre-calculated Slices are then employed to store these Observations, each fixed over a defined period." .
+# 
+# http://purl.org/net/sett/SeTT
+<http://purl.org/net/sett/SeTT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/SeTT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/ThematicTrajectory> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/hasThematicTrajectory> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/SeTT> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/TerritorialUnit> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/isSeTTOf> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/SeTT> <http://www.w3.org/2000/01/rdf-schema#comment> "The Semantic Trajectory of a Territorial Unit (SeTT) represents the collection of Thematic Trajectories associated with a Territorial Unit (TU). \nIt is sufficiently abstract to contain Thematic Trajectories regardless of their Thematic domain. \nA Territorial Unit (TU) can be composed of one ore multiple SeTTs." .
+# 
+# http://purl.org/net/sett/SemanticAnnotation
+<http://purl.org/net/sett/SemanticAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/SemanticAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Semantic annotations are used to enhance and provide additional context to Thematic components." .
+# 
+# http://purl.org/net/sett/Slice
+<http://purl.org/net/sett/Slice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Slice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/RawComponent> .
+<http://purl.org/net/sett/Slice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/net/sett/RawTrajectory> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/isSliceOf> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/Slice> <http://www.w3.org/2000/01/rdf-schema#comment> "Pre-calculated Slices are components of the Raw trajectory which offers an efficient method for storing data, originally organized in EO data cubes across the dimensions of Space, Time, and Indicator. \nEach slice time period is defined by the detected Transition Points such as Breakpoints. \nImportantly, Slices are used to calculate the Trend component within the Structured trajectory." .
+# 
+# http://purl.org/net/sett/SlopeDirection
+<http://purl.org/net/sett/SlopeDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/SlopeDirection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/SlopeDirection> <http://www.w3.org/2000/01/rdf-schema#comment> "Slope Direction is a specific type of Intrinsic Attribute that describes the direction of the slope within a Trend, indicating whether it is increasing or decreasing." .
+# 
+# http://purl.org/net/sett/SlopeStrength
+<http://purl.org/net/sett/SlopeStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/SlopeStrength> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/SlopeStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "Slope Strength is a specific type of Intrinsic Attribute that measures the steepness of the slope in a Trend, reflecting the rate of change." .
+# 
+# http://purl.org/net/sett/SlopeValue
+<http://purl.org/net/sett/SlopeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/SlopeValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/SlopeValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Slop eValue is a specific type of Intrinsic Attribute that represents the numerical value of the slope." .
+# 
+# http://purl.org/net/sett/StructuredComponent
+<http://purl.org/net/sett/StructuredComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/StructuredComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Component> .
+<http://purl.org/net/sett/StructuredComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A Structured Component is a type of Component used to form a Structured trajectory." .
+# 
+# http://purl.org/net/sett/StructuredTrajectory
+<http://purl.org/net/sett/StructuredTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/StructuredTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/TransitionPoint> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett#hasTransitionPoint> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/StructuredTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/Trend> .
+_:genid9 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett#hasTrend> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/StructuredTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A Structured trajectory results from organizing a Raw trajectory into a more structured format. It alternates between a chronologically ordered sequence of Trends and Transition Points, always concluding with a Trend. If no Transition Point is detected, the Structured Trajectory consists solely of a single Trend, indicating no transitional changes within the sequence." .
+# 
+# http://purl.org/net/sett/TerritorialUnit
+<http://purl.org/net/sett/TerritorialUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TerritorialUnit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/SeTT> .
+_:genid10 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/hasSeTT> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/TerritorialUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A Territorial Unit (TU) denotes a geographic area at the lowest level of administrative division (e.g., municipalities, sub-districts, townships). \nTUs are spatially fixed entities, although they may evolve over time due to environmental shifts (e.g., land use changes, climate effects) or socioeconomic factors (e.g., population dynamics). \nTo approach cases where TU boundaries are not permanently fixed, we exploit the Territorial Statistical Nomenclature (TSN) ontology, specifically the tsn:UnitVersion class, which describes a unique representation of a Territorial Unit that remains stable for a defined period. \nTUs are composed of one or more SeTT." .
+# 
+# http://purl.org/net/sett/ThematicComponent
+<http://purl.org/net/sett/ThematicComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/ThematicComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/Component> .
+<http://purl.org/net/sett/ThematicComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "A Thematic Component is a type of Component used to form a Thematic trajectory." .
+# 
+# http://purl.org/net/sett/ThematicTrajectory
+<http://purl.org/net/sett/ThematicTrajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/ThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/Episode> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/hasEpisode> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/ThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/Event> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/hasEvent> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/ThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/SeTT> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett/isThematicTrajectoryOf> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/ThematicTrajectory> <http://www.w3.org/2000/01/rdf-schema#comment> "A Thematic Trajectory is a semantically enriched representation of a Territorial Unit's (TU) trajectory, associated with a specific theme. It is derived from the annotation of a Structured Trajectory and alternates between a chronologically ordered sequence of Episodes and Events, always concluding with an Episode. \nA Thematic Trajectory consists solely of a single Episode if no Event is present." .
+# 
+# http://purl.org/net/sett/Theme
+<http://purl.org/net/sett/Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "A Theme characterizes the subject of a Thematic trajectory, providing a descriptive label for the whole trajectory." .
+# 
+# http://purl.org/net/sett/TransitionPoint
+<http://purl.org/net/sett/TransitionPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TransitionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/StructuredComponent> .
+<http://purl.org/net/sett/TransitionPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/StructuredTrajectory> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett#isTransitionPointOf> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/TransitionPoint> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/net/sett/Trend> .
+<http://purl.org/net/sett/TransitionPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A Transition Point (TP) is a component of a Structure trajectory. \nEach TP is characterized by its position in the trajectory, as well as, intrinsic and external attributes that provide detailed information about its nature. \nUnlike Trends, TPs have an instantaneous duration, indicating that the change occurs at a precise moment. \nA TP marks the discontinuity between Trends." .
+# 
+# http://purl.org/net/sett/TransitionPointX
+<http://purl.org/net/sett/TransitionPointX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TransitionPointX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TransitionPointX> <http://www.w3.org/2000/01/rdf-schema#comment> "Transition Point X is a specific type of Intrinsic Attribute that denotes the x-coordinate of a Transition Point within the trajectory." .
+# 
+# http://purl.org/net/sett/TransitionPointY
+<http://purl.org/net/sett/TransitionPointY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TransitionPointY> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TransitionPointY> <http://www.w3.org/2000/01/rdf-schema#comment> "Transition Point Y is a specific type of Intrinsic Attribute that denotes the y-coordinate of a Transition Point within the trajectory" .
+# 
+# http://purl.org/net/sett/Trend
+<http://purl.org/net/sett/Trend> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/Trend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/StructuredComponent> .
+<http://purl.org/net/sett/Trend> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onClass> <http://purl.org/net/sett/StructuredTrajectory> .
+_:genid15 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/net/sett#isTrendOf> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://purl.org/net/sett/Trend> <http://www.w3.org/2000/01/rdf-schema#comment> "A Trend is a component of a Structured Trajectory, calculated from its corresponding Slice within a Raw Trajectory. \nEach Trend is characterized by its position in the trajectory, along with intrinsic and external attributes that provide detailed information about the trend's properties and behavior of the data. \nThe Trend period culminates when a Transition Point occurs, marking a discontinuity between Trends." .
+# 
+# http://purl.org/net/sett/TrendDuration
+<http://purl.org/net/sett/TrendDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendDuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TrendDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Trend Duration is a specific type of Intrinsic Attribute that indicates the length of time over which a Trend is observed." .
+# 
+# http://purl.org/net/sett/TrendEndX
+<http://purl.org/net/sett/TrendEndX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendEndX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TrendEndX> <http://www.w3.org/2000/01/rdf-schema#comment> "TrendEndX is a specific type of Intrinsic Attribute that specifies the x-coordinate at the conclusion of a Trend." .
+# 
+# http://purl.org/net/sett/TrendEndY
+<http://purl.org/net/sett/TrendEndY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendEndY> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TrendEndY> <http://www.w3.org/2000/01/rdf-schema#comment> "Trend End Y is a specific type of Intrinsic Attribute that specifies the y-coordinate at the conclusion of a Trend." .
+# 
+# http://purl.org/net/sett/TrendGradualMagnitude
+<http://purl.org/net/sett/TrendGradualMagnitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendGradualMagnitude> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/TrendGradualMagnitude> <http://www.w3.org/2000/01/rdf-schema#comment> "A Gradual Magnitude is a specific type of External Attribute that describes the magnitude of change within a Trend. It is calculated by multiplying the Slope value by the Trend duration." .
+# 
+# http://purl.org/net/sett/TrendPValue
+<http://purl.org/net/sett/TrendPValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendPValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/ExternalAttributes> .
+<http://purl.org/net/sett/TrendPValue> <http://www.w3.org/2000/01/rdf-schema#comment> "A p-value is a specific type of External Attribute that indicates the statistical significance of a Trend line." .
+# 
+# http://purl.org/net/sett/TrendStartX
+<http://purl.org/net/sett/TrendStartX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendStartX> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TrendStartX> <http://www.w3.org/2000/01/rdf-schema#comment> "Trend Start X is a specific type of Intrinsic Attribute that indicates the x-coordinate at the beginning of a Trend." .
+# 
+# http://purl.org/net/sett/TrendStartY
+<http://purl.org/net/sett/TrendStartY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/net/sett/TrendStartY> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/net/sett/IntrinsicAttributes> .
+<http://purl.org/net/sett/TrendStartY> <http://www.w3.org/2000/01/rdf-schema#comment> "Trend Start Y is a specific type of Intrinsic Attribute that indicates the y-coordinate at the beginning of a Trend." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid16 <http://www.w3.org/2002/07/owl#members> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/Theme> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/ThematicTrajectory> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TerritorialUnit> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/StructuredTrajectory> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/SemanticAnnotation> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/SeTT> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/RawTrajectory> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/Indicator> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/Component> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/Attribute> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid27 <http://www.w3.org/2002/07/owl#members> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendPValue> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendGradualMagnitude> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/ExplanatoryFactor> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/CorinLandCoverPercentage> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/CorinLandCoverHectares> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/BreakpointProbability> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/BreakpointMagnitude> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid35 <http://www.w3.org/2002/07/owl#members> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendStartY> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendStartX> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendEndY> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendEndX> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TrendDuration> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TransitionPointY> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/TransitionPointX> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/SlopeValue> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/SlopeStrength> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/SlopeDirection> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/EventDate> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/EpisodeStartDate> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/EpisodeEndDate> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid49 <http://www.w3.org/2002/07/owl#members> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/ThematicComponent> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/StructuredComponent> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/net/sett/RawComponent> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

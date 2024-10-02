@@ -1,0 +1,1311 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/net/sett#"
+     xml:base="http://purl.org/net/sett"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://purl.org/net/sett#">
+        <owl:versionIRI rdf:resource="http://purl.org/net/sett/1.0"/>
+        <dc:abstract xml:lang="en">The negative impact of human activities on our planet has increased the interest of stakeholders-from policymakers to citizens-in monitoring and understanding local changes, including both environmental and socio-economic factors. However, these data are often complex and challenging for non-experts to interpret. We introduce the SeTT (Semantic Trajectory of a Territorial Unit) ontology to describe the semantic trajectories of Territorial Units (TUs), making this information accessible to both expert and non-expert users.</dc:abstract>
+        <dc:description xml:lang="en">SeTT is a multi-layer ontology specifically designed to describe the semantic trajectories of Territorial Units (TUs). It models three types of trajectories: raw, structured, and semantic. Together, these trajectories create a comprehensive framework for capturing, organizing, and analyzing the evolution of TUs across various thematic domains, thereby improving users&apos; ability to interpret and understand complex data.</dc:description>
+        <dc:title xml:lang="en">The SeTT ontology</dc:title>
+        <terms:created xml:lang="en">October 2024</terms:created>
+        <terms:creator xml:lang="en">(1) Daniela Fernanda Milon-Flores</terms:creator>
+        <terms:creator xml:lang="en">(2) Camille Bernard</terms:creator>
+        <terms:creator xml:lang="en">(3) Jerome Gensel</terms:creator>
+        <terms:creator xml:lang="en">(4) Gregory Giuliani</terms:creator>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <schema:citation xml:lang="en">Cite this vocabulary as Milon-Flores, D.; Bernard, C.; Gensel, J. and Giuliani, G. The SeTT ontology 1.0</schema:citation>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://schema.org/citation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/citation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/net/sett#breakpointDelimit -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#breakpointDelimit">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/delimit"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Breakpoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett#hasTransitionPoint -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#hasTransitionPoint">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett#isTransitionPointOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett#hasTrend -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#hasTrend">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett#isTrendOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Trend"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett#isComposedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#isComposedOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett#isTransitionPointOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#isTransitionPointOf">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett#isTrendOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett#isTrendOf">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/IsEventOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/IsEventOf">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/hasEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/breakEventIsAnnotatedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/breakEventIsAnnotatedFrom">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/eventIsAnnotatedFrom"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/BreakEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Breakpoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/delimit -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/delimit">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/episodeIsAnnotatedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/episodeIsAnnotatedFrom">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Episode"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Trend"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/eventIsAnnotatedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/eventIsAnnotatedFrom">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Event"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasAttribute">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isAttributeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasBreakpointMagnitude -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasBreakpointMagnitude">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Breakpoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/BreakpointMagnitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasBreakpointProbability -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasBreakpointProbability">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Breakpoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/BreakpointProbability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasCorinLandCoverHectares -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasCorinLandCoverHectares">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Episode"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/CorinLandCoverHectares"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasCorinLandCoverPercentage -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasCorinLandCoverPercentage">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Episode"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/CorinLandCoverPercentage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasEpisode -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasEpisode">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isEpisodeOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Episode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasEpisodeEndDate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasEpisodeEndDate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Episode"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/EpisodeEndDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasEpisodeStartDate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasEpisodeStartDate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Episode"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/EpisodeStartDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasEvent -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasEvent">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasEventDate -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasEventDate">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Event"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/EventDate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasExplanatoryFactor -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasExplanatoryFactor">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/BreakEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/ExplanatoryFactor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasExternalAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasExternalAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasAttribute"/>
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isExternalAttributeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasIntrinsicAttribute -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasIntrinsicAttribute">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasAttribute"/>
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isIntrinsicAttributeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSeTT -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSeTT">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isSeTTOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/TerritorialUnit"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/SeTT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSemanticAnnotation -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSemanticAnnotation">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isSemanticAnnotationOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/ThematicComponent"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/SemanticAnnotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSlice -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSlice">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isSliceOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/RawTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSlopeDirection -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSlopeDirection">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/SlopeDirection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSlopeStrength -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSlopeStrength">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/SlopeStrength"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSlopeValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasSlopeValue">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/SlopeValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasThematicTrajectory -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasThematicTrajectory">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isThematicTrajectoryOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/SeTT"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTheme">
+        <owl:inverseOf rdf:resource="http://purl.org/net/sett/isThemeOf"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTransitionPointX -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTransitionPointX">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TransitionPointX"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTransitionPointY -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTransitionPointY">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TransitionPointY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendDuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendDuration">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendDuration"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendEndX -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendEndX">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendEndX"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendEndY -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendEndY">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendEndY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendGradualMagnitude -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendGradualMagnitude">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendGradualMagnitude"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendPValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendPValue">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasExternalAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendPValue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendStarY -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendStarY">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendStartY"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasTrendStartX -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/hasTrendStartX">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/hasIntrinsicAttribute"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/TrendStartX"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/isAttributeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isAttributeOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isEpisodeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isEpisodeOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isExternalAttributeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isExternalAttributeOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/isAttributeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/isIntrinsicAttributeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isIntrinsicAttributeOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/net/sett/isAttributeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/isSeTTOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isSeTTOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isSemanticAnnotationOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isSemanticAnnotationOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isSliceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isSliceOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isThematicTrajectoryOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isThematicTrajectoryOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/isThemeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/isThemeOf"/>
+    
+
+
+    <!-- http://purl.org/net/sett/monitorsIndicator -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/monitorsIndicator">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/RawTrajectory"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/semanticAnnotationBasedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/semanticAnnotationBasedOn">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/SemanticAnnotation"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Attribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/trendIsCalculadedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/net/sett/trendIsCalculadedFrom">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:range rdf:resource="http://purl.org/net/sett/Slice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/net/sett/calculatedWith -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/sett/calculatedWith">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasAttributeValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/sett/hasAttributeValue">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Attribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasSequenceOrder -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/sett/hasSequenceOrder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/net/sett/hasThemeLabel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/net/sett/hasThemeLabel">
+        <rdfs:domain rdf:resource="http://purl.org/net/sett/Theme"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/net/sett/Attribute -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Attribute">
+        <rdfs:comment>Trajectory components have Attributes that enhance their descriptions. 
+The value of an Attribute is flexible enough to represent various literal values regardless of the context.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/BreakEvent -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/BreakEvent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Event"/>
+        <rdfs:comment>A Break Event is a specific type of Event semantically annotated from a Breakpoint. 
+Break Events can be described by specialized attributes known as Explanatory Factors, which further explaint the occurrence of the breakpoint.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Breakpoint -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Breakpoint">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+        <rdfs:comment>A Breakpoint is a specific type of Transition Point (TP) defined as a moment in time when an abrupt change occurs in a time series. It is used to annotate a Break Event.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/BreakpointMagnitude -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/BreakpointMagnitude">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>A Breakpoint Magnitude is a specific type of External Attribute that quantifies the change at a Breakpoint. It is calculated as the distance between the Breakpoint and its subsequent point in time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/BreakpointProbability -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/BreakpointProbability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>BreakpointProbability is a specific type of External Attribute that indicates the likelihood of a Breakpoint occurring based on statistical analysis.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Component -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Component">
+        <rdfs:comment>Trajectories consist of Components, each defined by its position in the sequence, the algorithm used for its calculation, and a set of Attributes that enrich its description.
+In the SeTT ontology, there are three types of components: thematic, structured, and raw.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/CorinLandCoverHectares -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/CorinLandCoverHectares">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>CorinLandCoverHectares is a specific type of External Attribute that measures the area, in hectares, covered by different land cover types within a defined region.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/CorinLandCoverPercentage -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/CorinLandCoverPercentage">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>CorinLandCoverPercentage is a specific type of External Attribute that expresses the proportion of land covered by specific land cover types as a percentage of the total area.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Episode -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Episode">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ThematicComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/isEpisodeOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/net/sett/Event"/>
+        <rdfs:comment>An Episode is a component of the Thematic Trajectory, derived from the semantic annotation of its corresponding Trend within a Structured Trajectory. 
+Each Episode is defined by its position in the trajectory sequence and characterized by semantic annotations that provide context for interpreting the trajectory&apos;s behavior.
+ A set of attributes further enriches its contextual information. 
+An Episode period culminates when an Event occurs, marking a discontinuity between Episodes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/EpisodeEndDate -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/EpisodeEndDate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Episode End Date is a specific type of Intrinsic Attribute that indicates the date when an Episode concludes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/EpisodeStartDate -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/EpisodeStartDate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Episode Start Date is a specific type of Intrinsic Attribute that marks the date when an Episode begins.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Event -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Event">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ThematicComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/IsEventOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Event is a component of a Thematic Trajectory, derived from the semantic annotation of a Transition Point within a Structured Trajectory. 
+Each Event is defined by its position in the trajectory and comprises semantic annotations and attributes that provide context and enhance the interpretation of the Thematic Trajectory&apos;s behavior. 
+Unlike Episodes, Events have an instantaneous duration and signify the discontinuity between Episodes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/EventDate -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/EventDate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Event Date is a specific type of Intrinsic Attribute that specifies the date when an Event occurred.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/ExplanatoryFactor -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/ExplanatoryFactor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>Explanatory Factors are a specific type of External Attribute that provides additional context regarding the occurrence of a Breakpoint. 
+Various resources, such as available URLs or bibliographic citations, can be used to enrich the derived Break Event.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/ExternalAttributes -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/ExternalAttributes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Attribute"/>
+        <rdfs:comment>External attributes are a type of attribute that is not derived from the component but contributes to its enrichment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Indicator -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Indicator">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett#isComposedOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/Indicator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An Indicator is defined as a quantitative measure that captures the status of a situation or its variations over time. In the context of a Raw trajectory, it represents the data being monitored. 
+The concept of an Indicator is sufficiently abstract to encompass various domains, including environmental and socio-economic.
+Indicators correspond to the Indicator dimension of the RDF Data Cube and can exist as standalone measures or be composed of other indicators. 
+Indicators can be further enriched with metadata such as bibliography citations, formula descriptions, and open-linked data resources.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/IntrinsicAttributes -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/IntrinsicAttributes">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Attribute"/>
+        <rdfs:comment>Intrinsic attributes are a type of attribute derived from the component that enhances its description.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/RawComponent -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/RawComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Component"/>
+        <rdfs:comment>A Raw Component is a type of Component used to form a Raw trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/RawTrajectory -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/RawTrajectory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/hasSlice"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/Slice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A raw trajectory, or simply a trajectory, of Territorial Units (TUs) refers to a sequence of chronologically ordered measurements, tracking the temporal changes of domain-specific indicators.
+To efficiently manage large volumes of data, the Indicator measurements are represented as Observations using the RDF Data Cube vocabulary, structured across three dimensions: Time, Space, and Indicator.
+Pre-calculated Slices are then employed to store these Observations, each fixed over a defined period.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/SeTT -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/SeTT">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/hasThematicTrajectory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/ThematicTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/isSeTTOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/TerritorialUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The Semantic Trajectory of a Territorial Unit (SeTT) represents the collection of Thematic Trajectories associated with a Territorial Unit (TU). 
+It is sufficiently abstract to contain Thematic Trajectories regardless of their Thematic domain. 
+A Territorial Unit (TU) can be composed of one ore multiple SeTTs.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/SemanticAnnotation -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/SemanticAnnotation">
+        <rdfs:comment>Semantic annotations are used to enhance and provide additional context to Thematic components.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Slice -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Slice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/RawComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/isSliceOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.org/net/sett/RawTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Pre-calculated Slices are components of the Raw trajectory which offers an efficient method for storing data, originally organized in EO data cubes across the dimensions of Space, Time, and Indicator. 
+Each slice time period is defined by the detected Transition Points such as Breakpoints. 
+Importantly, Slices are used to calculate the Trend component within the Structured trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/SlopeDirection -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/SlopeDirection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Slope Direction is a specific type of Intrinsic Attribute that describes the direction of the slope within a Trend, indicating whether it is increasing or decreasing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/SlopeStrength -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/SlopeStrength">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Slope Strength is a specific type of Intrinsic Attribute that measures the steepness of the slope in a Trend, reflecting the rate of change.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/SlopeValue -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/SlopeValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Slop eValue is a specific type of Intrinsic Attribute that represents the numerical value of the slope.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/StructuredComponent -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/StructuredComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Component"/>
+        <rdfs:comment>A Structured Component is a type of Component used to form a Structured trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/StructuredTrajectory -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/StructuredTrajectory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett#hasTransitionPoint"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/TransitionPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett#hasTrend"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/Trend"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Structured trajectory results from organizing a Raw trajectory into a more structured format. It alternates between a chronologically ordered sequence of Trends and Transition Points, always concluding with a Trend. If no Transition Point is detected, the Structured Trajectory consists solely of a single Trend, indicating no transitional changes within the sequence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TerritorialUnit -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TerritorialUnit">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/hasSeTT"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/SeTT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Territorial Unit (TU) denotes a geographic area at the lowest level of administrative division (e.g., municipalities, sub-districts, townships). 
+TUs are spatially fixed entities, although they may evolve over time due to environmental shifts (e.g., land use changes, climate effects) or socioeconomic factors (e.g., population dynamics). 
+To approach cases where TU boundaries are not permanently fixed, we exploit the Territorial Statistical Nomenclature (TSN) ontology, specifically the tsn:UnitVersion class, which describes a unique representation of a Territorial Unit that remains stable for a defined period. 
+TUs are composed of one or more SeTT.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/ThematicComponent -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/ThematicComponent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/Component"/>
+        <rdfs:comment>A Thematic Component is a type of Component used to form a Thematic trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/ThematicTrajectory -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/ThematicTrajectory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/hasEpisode"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/Episode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/hasEvent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett/isThematicTrajectoryOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/SeTT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Thematic Trajectory is a semantically enriched representation of a Territorial Unit&apos;s (TU) trajectory, associated with a specific theme. It is derived from the annotation of a Structured Trajectory and alternates between a chronologically ordered sequence of Episodes and Events, always concluding with an Episode. 
+A Thematic Trajectory consists solely of a single Episode if no Event is present.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Theme -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Theme">
+        <rdfs:comment>A Theme characterizes the subject of a Thematic trajectory, providing a descriptive label for the whole trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TransitionPoint -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TransitionPoint">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/StructuredComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett#isTransitionPointOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.org/net/sett/Trend"/>
+        <rdfs:comment>A Transition Point (TP) is a component of a Structure trajectory. 
+Each TP is characterized by its position in the trajectory, as well as, intrinsic and external attributes that provide detailed information about its nature. 
+Unlike Trends, TPs have an instantaneous duration, indicating that the change occurs at a precise moment. 
+A TP marks the discontinuity between Trends.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TransitionPointX -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TransitionPointX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Transition Point X is a specific type of Intrinsic Attribute that denotes the x-coordinate of a Transition Point within the trajectory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TransitionPointY -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TransitionPointY">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Transition Point Y is a specific type of Intrinsic Attribute that denotes the y-coordinate of a Transition Point within the trajectory</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/Trend -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/Trend">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/StructuredComponent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/net/sett#isTrendOf"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.org/net/sett/StructuredTrajectory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A Trend is a component of a Structured Trajectory, calculated from its corresponding Slice within a Raw Trajectory. 
+Each Trend is characterized by its position in the trajectory, along with intrinsic and external attributes that provide detailed information about the trend&apos;s properties and behavior of the data. 
+The Trend period culminates when a Transition Point occurs, marking a discontinuity between Trends.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendDuration -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendDuration">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Trend Duration is a specific type of Intrinsic Attribute that indicates the length of time over which a Trend is observed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendEndX -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendEndX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>TrendEndX is a specific type of Intrinsic Attribute that specifies the x-coordinate at the conclusion of a Trend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendEndY -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendEndY">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Trend End Y is a specific type of Intrinsic Attribute that specifies the y-coordinate at the conclusion of a Trend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendGradualMagnitude -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendGradualMagnitude">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>A Gradual Magnitude is a specific type of External Attribute that describes the magnitude of change within a Trend. It is calculated by multiplying the Slope value by the Trend duration.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendPValue -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendPValue">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/ExternalAttributes"/>
+        <rdfs:comment>A p-value is a specific type of External Attribute that indicates the statistical significance of a Trend line.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendStartX -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendStartX">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Trend Start X is a specific type of Intrinsic Attribute that indicates the x-coordinate at the beginning of a Trend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/net/sett/TrendStartY -->
+
+
+    <owl:Class rdf:about="http://purl.org/net/sett/TrendStartY">
+        <rdfs:subClassOf rdf:resource="http://purl.org/net/sett/IntrinsicAttributes"/>
+        <rdfs:comment>Trend Start Y is a specific type of Intrinsic Attribute that indicates the y-coordinate at the beginning of a Trend.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/sett/Attribute"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/Component"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/Indicator"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/RawTrajectory"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/SeTT"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/SemanticAnnotation"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/StructuredTrajectory"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TerritorialUnit"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/ThematicTrajectory"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/Theme"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/sett/BreakpointMagnitude"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/BreakpointProbability"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/CorinLandCoverHectares"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/CorinLandCoverPercentage"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/ExplanatoryFactor"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendGradualMagnitude"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendPValue"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/sett/EpisodeEndDate"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/EpisodeStartDate"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/EventDate"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/SlopeDirection"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/SlopeStrength"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/SlopeValue"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TransitionPointX"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TransitionPointY"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendDuration"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendEndX"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendEndY"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendStartX"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/TrendStartY"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/net/sett/RawComponent"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/StructuredComponent"/>
+            <rdf:Description rdf:about="http://purl.org/net/sett/ThematicComponent"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
